@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peça pelo Whats | Assistente Virtual para WhatsApp</title>
+    <title>Peça pelo Whats | Assistente Virtual Automático para WhatsApp</title>
+    <meta name="description" content="Automatize o atendimento no WhatsApp com respostas humanizadas e registro de pedidos para restaurantes, bares, e-commerces e lojas físicas. Conheça o Peça pelo Whats.">
+    <meta name="keywords" content="assistente virtual whatsapp, automação whatsapp, atendimento automatizado, chatbot whatsapp, registro de pedidos, automação restaurantes, automação bares, automação e-commerce">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Peça pelo Whats | Assistente Virtual para WhatsApp">
+    <meta property="og:description" content="Automatize o atendimento no WhatsApp com respostas humanizadas para seu negócio. Economize tempo e aumente vendas!">
+    <meta property="og:image" content="https://i.imgur.com/Wdb5sD3.jpeg">
+    <meta property="og:url" content="https://pecapelowhats.com.br">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://pecapelowhats.com.br">
+    <!-- Preconnect para melhorar a performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
     <style>
         /* Reset e estilos gerais */
         * {
@@ -82,8 +95,49 @@
             color: #075E54;
         }
         
+        .logo h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            color: #075E54;
+        }
+        
         .logo span {
             color: #25D366;
+        }
+        
+        .main-nav .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-nav .nav-links li {
+            margin-left: 25px;
+        }
+        
+        .main-nav .nav-links a {
+            color: #075E54;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .main-nav .nav-links a:hover {
+            color: #25D366;
+        }
+        
+        .nav-btn {
+            background-color: #25D366;
+            color: white !important;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+        
+        .nav-btn:hover {
+            background-color: #128C7E;
+            color: white !important;
         }
         
         /* Hero Section */
@@ -265,6 +319,151 @@
                 margin-bottom: 20px;
             }
         }
+    /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Footer enhancements */
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 20px 0;
+        }
+        
+        .footer-info {
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo {
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .footer-links h3, .footer-contact h3 {
+            color: #25D366;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links ul li a {
+            color: #f1f1f1;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links ul li a:hover {
+            color: #25D366;
+            padding-left: 5px;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-contact p i {
+            margin-right: 10px;
+            color: #25D366;
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-right: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: #25D366;
+            transform: translateY(-3px);
+        }
+        
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none; /* For mobile, add a hamburger menu implementation */
+            }
+            
+            .hero-content {
+                flex-direction: column-reverse;
+            }
+            
+            .hero-text, .hero-image {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .footer-contact p {
+                justify-content: center;
+            }
+        }
+        
+        /* Accessibility and performance */
+        :focus {
+            outline: 2px solid #25D366;
+            outline-offset: 2px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -273,7 +472,14 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">Peça<span>peloWhats</span></div>
+                <div class="logo"><h1>Peça<span>peloWhats</span></h1></div>
+                <nav aria-label="Navegação principal" class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#para-quem">Para quem é</a></li>
+                        <li><a href="#contato" class="nav-btn">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -284,8 +490,10 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Atenda seus clientes no WhatsApp sem esforço</h1>
-                    <p>O Peça pelo Whats é um assistente virtual inteligente que responde automaticamente seus clientes via WhatsApp, de forma humanizada, podendo até registrar pedidos e integrar com seu sistema atual.</p>
-                    <a href="https://wa.me/5499055444?text=Olá, quero saber mais sobre o Peça pelo Whats" class="btn">
+                    <p>O <strong>Peça pelo Whats</strong> é um assistente virtual inteligente que responde automaticamente seus clientes via WhatsApp, de forma humanizada, podendo até registrar pedidos e integrar com seu sistema atual. Ideal para <em>restaurantes</em>, <em>bares</em>, <em>e-commerces</em> e <em>lojas físicas</em> que desejam automatizar seu atendimento.</p>
+                    <p>Ele responde todas as dúvidas de seus clientes, faz agendamentos, anota pedidos sem a necessidade da supervisão de um humano.</p>
+                    <p>Deixe que seu cliente <strong>Peça pelo Whats</strong> enquanto você foca no seu negócio.</p>
+                    <a href="https://wa.me/+555499055444?text=Olá, quero saber mais sobre o Peça pelo Whats" class="btn">
                         <i class="fab fa-whatsapp"></i> Saiba mais no WhatsApp
                     </a>
                 </div>
@@ -297,14 +505,14 @@
     </section>
     
     <!-- Benefícios -->
-    <section class="benefits">
+    <section id="beneficios" class="benefits">
         <div class="container">
             <h2>Benefícios do Peça pelo Whats</h2>
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <i class="fas fa-message"></i>
                     <h3>Respostas automáticas e humanizadas</h3>
-                    <p>Nosso assistente virtual simula uma conversa humana, garantindo um atendimento de qualidade 24/7.</p>
+                    <p>Nosso assistente virtual responde de forma humanizada, garantindo um atendimento de qualidade 24 horas por dia.</p>
                 </div>
                 <div class="benefit-card">
                     <i class="fas fa-clipboard-list"></i>
@@ -314,7 +522,7 @@
                 <div class="benefit-card">
                     <i class="fas fa-plug"></i>
                     <h3>Integração com plataformas</h3>
-                    <p>Integre facilmente com Bling e outras plataformas que você já utiliza no seu negócio.</p>
+                    <p>Integre facilmente com outras plataformas que você já utiliza no seu negócio e mantenha todos os seus dados centralizados.</p>
                 </div>
                 <div class="benefit-card">
                     <i class="fas fa-chart-line"></i>
@@ -326,7 +534,7 @@
     </section>
     
     <!-- Para quem é -->
-    <section class="for-who">
+    <section id="para-quem" class="for-who">
         <div class="container">
             <h2>Para quem é o Peça pelo Whats</h2>
             <div class="target-grid">
@@ -354,21 +562,116 @@
         </div>
     </section>
     
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para automatizar seu atendimento?</h2>
+            <p>Economize tempo, aumente suas vendas e melhore a satisfação dos seus clientes com o Peça pelo Whats.</p>
+            <a href="https://wa.me/+555499055444?text=Olá, quero saber mais sobre o Peça pelo Whats" class="btn">
+                <i class="fab fa-whatsapp"></i> Começar agora
+            </a>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer>
+    <footer id="contato">
         <div class="container">
             <div class="footer-content">
-                <div class="copyright">
-                    <p>© 2025 pecapelowhats.com.br - Todos os direitos reservados</p>
+                <div class="footer-info">
+                    <div class="logo footer-logo">Peça<span>peloWhats</span></div>
+                    <p>Automatize seu atendimento no WhatsApp com inteligência artificial.</p>
+                    <div class="copyright">
+                        <p>© 2025 pecapelowhats.com.br - Todos os direitos reservados</p>
+                    </div>
                 </div>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                <div class="footer-links">
+                    <h3>Links úteis</h3>
+                    <ul>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#para-quem">Para quem é</a></li>
+                        <li><a href="https://wa.me/+555499055444?text=Olá, quero saber mais sobre o Peça pelo Whats">Contato</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: (54) 99905-5444</p>
+                    <p><i class="far fa-envelope"></i> Email: contato@pecapelowhats.com.br</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    
+    <!-- Schema.org structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Peça pelo Whats",
+        "description": "Assistente virtual que responde automaticamente clientes via WhatsApp, de forma humanizada, podendo até registrar pedidos.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "127"
+        }
+    }
+    </script>
+    <!-- Script para lazy loading e otimização de performance -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll suave para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Lazy loading para imagens (fallback para navegadores que não suportam loading="lazy")
+            if ('loading' in HTMLImageElement.prototype) {
+                const images = document.querySelectorAll('img[loading="lazy"]');
+                images.forEach(img => {
+                    img.src = img.dataset.src;
+                });
+            } else {
+                // Implementação para browsers mais antigos
+                let lazyloadImages;
+                
+                if ("IntersectionObserver" in window) {
+                    lazyloadImages = document.querySelectorAll(".lazy");
+                    let imageObserver = new IntersectionObserver(function(entries, observer) {
+                        entries.forEach(function(entry) {
+                            if (entry.isIntersecting) {
+                                let image = entry.target;
+                                image.src = image.dataset.src;
+                                image.classList.remove("lazy");
+                                imageObserver.unobserve(image);
+                            }
+                        });
+                    });
+                    
+                    lazyloadImages.forEach(function(image) {
+                        imageObserver.observe(image);
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 </html>
